@@ -1,0 +1,276 @@
+/* CSS Document */
+
+/*--------CREAR LA PAGINA PRINCIPAL-----------*/
+
+body{
+	background: url(../images/degradado.png) center top repeat-x;
+	}
+h1,h2,h3,h4,h5,h6,p{margin:0px;padding:0px;}
+/*---------DISEÑAR LAYOUT---------------------*/
+#contenedor {
+	width:100%;
+	margin:auto;
+	float: left;
+	-moz-border-radius: 5px 5px 0 0;
+    -khtml-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+	}
+#cabecera {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#039;
+	font-size:20px;
+	text-shadow:2px 2px 1px rgba(255, 255, 255, 0.5);
+	clear:both;
+	}
+
+.logo {
+	height:100px;
+	width:100px;
+	background: url(../images/ilmerico--.jpg) no-repeat;
+	background-size: 100% 100%;
+	float:left;
+	margin:20px;
+	border-radius:10px;
+	}
+#links{
+	float: right;
+}
+
+	/*---------------------------MENU DE NAVEGACION-------------------------*/
+.nav{
+	/*si queremos centrar*/
+	margin:auto;
+	padding:0px;
+	/*ajustar alto y ancho y dependera de la posicion de los textos*/
+	/*color de fondo para generar un area para los menus*/
+	height:40%;
+	width:78%;
+	border-radius:10px;
+	background:##CCC;
+	background:-moz-linear-gradient(#CCC,#222);
+	background:-webkit-linear-gradient(#CCC,#222);
+	background:-o-linear-gradient(#CCC,#222);
+	background:-ms-linear-gradient(#CCC,#222);
+	background:linear-gradient(#CCC,#222);
+	}
+.active{
+		background-color: blue;}
+
+.nav li{
+	list-style-type:none;
+	float:left;
+	padding:10px;
+	margin:0px;
+	border-right:1px solid white;
+	text-align:center;
+	width:auto;
+	position:relative;
+	/*pone efecto de despalazamiento del menu*/
+	transition:all 1s;
+	/*muestra el contenido ocupando toda la caja*/
+	display:block;
+	}
+.nav li:hover{
+	background:rgba(255,255,255,0.2);
+}
+.nav li a{
+	text-decoration:none;
+	color:white;
+	letter-spacing:2px;
+	}
+	.nav li a:link{color:#3F0;}
+	.nav li a:active {color:#FF0;}
+	.nav li a:visited{color:#FFF;}
+	/*efecto hover cambia el color*/
+	.nav li:hover > a{color:#039;}
+.nav li ul{
+	border-radius: 0 0 5px 5px;
+	margin:0;
+	transition:all 1s;
+	opacity:0;
+	/*posicionar el menu desplegable*/
+	position:absolute;
+	left:0px;
+	top:60px;
+	background:#CCC;
+	background:-moz-linear-gradient(#CCC,#222);
+	background:-webkit-linear-gradient(#CCC,#222);
+	background:-o-linear-gradient(#CCC,#222);
+	background:-ms-linear-gradient(#CCC,#222);
+	background:linear-gradient(#CCC,#222);
+	}
+	/*visibilidad al poner escima el mouse*/
+.nav li:hover ul{opacity:1;}
+	/*item de los submenus*/
+.nav li ul li{
+	text-align:left;
+	width:280px;
+	height:0px;
+	border-right:none;
+	overflow:hidden;/*no visible*/
+	padding:0px;
+	}
+.nav li:hover ul li{
+	height:35px;
+	overflow:visible;
+	padding:5px;
+	}
+.nav li ul li a{
+	text-align:left;
+	border:none;
+	margin:0px;
+	}
+	<!----------------------CONTENIDO------------------------------------->
+.seccion {
+	background-color:#666666;
+	width:100%;
+	margin:0;
+	padding:0;
+	
+	}
+.contenido h1#titulo{
+	font-family:"Eras Bold ITC", "Arial Black";
+	font-size:250%;
+	color:#0066CC;
+	padding:20px 0px;}
+.contenido {
+	background:#FFFFFF;
+	color:#333333;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-align:left;
+	border:0;
+	margin:10px;
+	padding:10px 5px 10px 50px;
+	width:60%;
+	float:left;
+	border-top-left-radius:10px;
+	line-height:25px;
+	list-style-image:url(../images/ok.png);
+	}
+	section ul li a:visited{color:#999;}
+	<!-------------------formacion academica--------------------->
+	
+	div.estud{
+	display:block;
+	width:100%;
+	}
+	div.mencion{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:40%;
+	float:left;
+	}
+	div.desa{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:60%;
+	float:left;
+	}
+	<!---------------------trabajos realizados-------------->
+	div.estud{
+	display:block;
+	width:100%;
+	}
+	div.lab{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:40%;
+	float:left;
+	}
+	div.trab{
+	display:block;
+	border:0;
+	padding:0;
+	margin:0;
+	width:60%;
+	float:left;
+	}
+	/*-----------------ASIDE---------------------*/
+.lateral {
+	background:#FFFFEF;
+	color:#666666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-align:left;
+	border:0;
+	margin:10px 0px;
+	padding:5px 5px 5px 10px;
+	float:left;
+	width:28%;
+	height:100%;
+	border-top-right-radius:10px;
+	}
+div.buscar{
+	background-color:#FFFFFF; 
+}
+
+div.form{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	text-align:left;
+	border:10px 10px;
+	border-color:rgba(255,255,255,255);
+	margin:20px 80px;
+	float:left;}
+div.reg{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	text-align:left;
+	border:10px 10px;
+	margin:20px 80px;
+	float:right;}
+ div.links h4 a{
+ 	text-decoration: none;
+ }
+  div.links h4 a img{
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+  /* -------------------------EFECTOS PARA EL FORMULARIO---------------------*/
+ 
+	/* Cambiar el color en el :hover y resaltar los campos en el :focus */
+	input:hover {
+	background-color:transparent;
+	}
+	input:focus {
+	border: 2px solid #EEEEEE;
+	}
+	textarea{
+		width: 98%;
+	}
+	textarea:hover {
+	background-color:transparent;
+	}
+	textarea:focus {
+	border: 2px solid #EEEEEE;
+	}
+	strong{
+	color:red;
+	font-weight:100;
+	}
+	fieldset{
+	border-color:blue;
+	border-radius: 5px; 
+	}
+
+/*--------------------PIE DE PAGINA--------------------*/
+
+.pie {
+	font-family:"Times New Roman", Times, serif;
+	color:#000099;
+	text-align:center;
+	font-size:25px;
+	padding:20px;
+	clear:both;
+	}
