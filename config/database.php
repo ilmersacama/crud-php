@@ -3,7 +3,7 @@
 	    "driver"  =>"mysql",
 	    "host"   =>"localhost",
 	    "user"   =>"root",
-	    "pass"   =>"ilsa1983",
+	    "pass"   =>"",
 	    "database" =>"blog",
 	    "charset" =>"utf8"
 	);
